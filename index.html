@@ -8,63 +8,112 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #f9f9f9;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .container {
-            width: 600px;
-            margin: auto;
-        }
-        form {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        input {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 10px 15px;
-            border: none;
-            background: #007bff;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-        }
-        th, td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-        .btn-edit {
-            background: #ffc107;
-        }
-        .btn-delete {
-            background: #dc3545;
-        }
-        .btn-edit:hover {
-            background: #e0a800;
-        }
-        .btn-delete:hover {
-            background: #c82333;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: #fff;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 32px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .container {
+        width: 600px;
+        margin: auto;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        flex: 1;
+        padding: 12px;
+        border: 1px solid #bbb;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+
+    button {
+        padding: 12px 15px;
+        border: none;
+        background: #2575fc;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 15px;
+    }
+
+    button:hover {
+        background: #1d5fd1;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+        padding: 14px;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    th {
+        background: #f1f1f1;
+        font-weight: bold;
+        color: #444;
+    }
+
+    .btn-edit {
+        background: #ffca28;
+        padding: 8px 12px;
+        border-radius: 6px;
+        color: #333;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn-edit:hover {
+        background: #e0b020;
+    }
+
+    .btn-delete {
+        background: #e53935;
+        padding: 8px 12px;
+        border-radius: 6px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn-delete:hover {
+        background: #c62828;
+    }
+</style>
     </style>
 </head>
 
